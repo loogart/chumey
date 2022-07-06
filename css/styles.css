@@ -1,0 +1,241 @@
+/* @import url('https://fonts.googleapis.com/css?family=Alegreya:700,800|Ubuntu:400,700&display=swap'); */
+
+:root {
+    --main: #708B59;
+    --secondary: #B29372;
+    --secondary-light: #DCCBB1;
+    --secondary-light-more: #EDE8E1;
+    --dark-color: #100901;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: var(--secondary-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Orelega One', cursive;
+}
+
+
+.navbar {
+    background-color: transparent;
+    /*
+    position: absolute;
+    width: 100%;
+    top: 0;
+*/
+}
+
+@media(min-width:768px){.navbar-light .navbar-nav .nav-link {
+    color: var(--dark-color);
+}
+
+
+
+.navbar-nav .nav-item{
+    margin-left: 12px;
+}
+}
+
+.hero {
+    background-color: var(--secondary-light);
+    background-image: url(../img/andrew-hero_tan.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    min-height: 100vh;
+    background-size: 50%;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 2.5rem;
+    ling-height: 1;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size:18px;
+}
+
+@media(max-width:767px){
+    h1{
+        font-size: 3rem!important;
+    }
+}
+
+.btn {
+    border-radius: 50px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: var(--main);
+    border-color: var(--main);
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #81a066;
+    border-color: #81a066;
+}
+
+section.how-to {
+    background-color: var(--secondary-light-more);
+    padding: 5rem 0;
+}
+
+.feature-1 {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+    background-color: var(--secondary-light);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    transition: all .3s ease-in-out;
+    border-radius: .5rem;
+}
+
+.feature-1:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.feature-1 a {
+    color: white;
+}
+
+.background-secondary {
+    background-color: var(--secondary);
+}
+
+.background-main {
+    background-color: var(--main);
+}
+
+.background-dark {
+    background-color: var(--dark-color);
+}
+
+section.strategy {
+    background-color: var(--secondary);
+    padding: 5rem 0;
+    color: white;
+}
+
+section.strategy h2 {
+    color: var(--secondary-light)
+}
+
+section.strategy ul li {
+    margin-bottom: 2rem;
+}
+
+section.strategy ul li h3 {
+    display: inline-block;
+    width:30%;
+}
+
+section.strategy ul li p {
+    display: inline-block;
+    width:70%;
+}
+
+section.strategy hr {
+    border-color: white;
+}
+
+
+@media(max-width:767px) {
+    .navbar {
+        background-color: var(--secondary-light);
+    }
+
+
+    .hero {
+        background-size: 40vh;
+        background-position: 110% 100%;
+        min-height: 100vh;
+    }
+
+    section.strategy ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    section.strategy ul li h3 {
+    width:100%;
+}
+
+section.strategy ul li p {
+    width:100%;
+}
+
+}
+
+section.about {
+    background-color: var(--secondary-light-more);
+    padding: 5rem 0;
+}
+
+section.coaching {
+    background-color: var(--main);
+    padding: 5rem 0;
+}
+
+section.coaching h2, section.coaching p{
+    color:white;
+}
+
+.final-cta {
+    background-color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.final-cta a:not(.btn) {
+    color: white;
+}
+
+.final-cta h2 {
+    color: var(--secondary-light-more);
+}
+
+
+footer {
+    background-color: var(--secondary-light);
+    padding: 5rem 0;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+.fixed-top.scrolled {
+    background-color: var(--secondary-light-more) !important;
+    box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1); 
+    transition: all 500ms ease-in-out;
+
+}
